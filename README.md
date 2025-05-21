@@ -39,6 +39,8 @@ Please, use the `config.json` file to specify your requirements:
     "max_image_dimension": 1024
 ```
 
+Create folder of `raw_data_path` under `root/img_subpath` and `root/label_subpath`, e.g. `dataset/imgs/data` and `dataset/labels/data`
+
 ## USAGE
 
 ```bash
@@ -50,7 +52,7 @@ The GUI will show up. In the terminal you can have a feedback on the current act
 ![](images/1.png)
 
 ### 1. Label
-To start labelling, click on the target label in the upper part of the GUI.
+**To start labelling, click on the target label in the upper part of the GUI.**
 
 - With **LEFT** mouse click you can add **POSITIVE POINTS** (red), i.e. suggest where the target object is. 
 - With **RIGHT** mouse click you can add **NEGATIVE POINTS** (blue), i.e. suggest where the target object is not. 

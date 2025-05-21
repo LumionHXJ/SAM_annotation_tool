@@ -223,7 +223,7 @@ class ImageProcessor:
                     self.mask = None
                     break
                 else:
-                    self.mask = self.mask.max(axis=0)
+                    self.mask = self.mask.max(axis=0) * 255 # only have 2 class in our case thus the max is 1.
                     #self.mask = np.clip(self.mask, 0, len(self.label_ids)-1)
                     self.mask = self.mask.astype(np.uint8)
                     break
